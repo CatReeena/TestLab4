@@ -11,13 +11,12 @@
 <br>
 <div style="text-align:center">
   <h2>
-    Hey You..!! This is your 1st Spring MCV Tutorial..<br> <br>
+    BlackWind cinema database.<br> <br>
   </h2>
   <h3>
-    <a href="api/test">Click here to See Welcome Message... </a>(to
-    check Spring MVC Controller... @RequestMapping("/test"))
-    <a href="api/testInjection">Click here to cinema list... </a>(to
-    check Spring MVC Controller... @RequestMapping("/testInjection"))
+    <a href="api/showHalls">Click here to see Halls... </a>(to
+    check Spring MVC Controller... @RequestMapping("/api/showMovies"))
+    <a href="api/showMovies">Click here to See Movies</a>
   </h3>
 </div>
 </body>

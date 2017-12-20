@@ -26,11 +26,11 @@ ${supplierNames}
 
 
 
-<c:forEach items="${cinemas}" var="cinema">
+<c:forEach items="${movies}" var="movie">
 
     <tr>
-        <td>${cinema.name}</td>
-        <td>${cinema.name}</td>
+        <td>${movie.name}</td>
+        <td>${movie.name}</td>
         <td><button class="delete" data-value="${cinema.name}">Remove</button></td>
     </tr>
 

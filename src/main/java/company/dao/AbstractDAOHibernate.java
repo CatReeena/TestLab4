@@ -13,6 +13,7 @@ import java.util.UUID;
  * Created by Shera on 19.12.2017.
  */
 @Component
+@Transactional
 public abstract class AbstractDAOHibernate<T> implements DAO<T> {
 
 
@@ -32,7 +33,7 @@ public abstract class AbstractDAOHibernate<T> implements DAO<T> {
         return elementsList;
     }
 
-    @Transactional
+
     @Override
     public boolean add(T object) {
         entityManager.persist(object);
