@@ -1,6 +1,7 @@
 package company.dao;
 
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -31,6 +32,7 @@ public abstract class AbstractDAOHibernate<T> implements DAO<T> {
         return elementsList;
     }
 
+    @Transactional
     @Override
     public boolean add(T object) {
         entityManager.persist(object);
